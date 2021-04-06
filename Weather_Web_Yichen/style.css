@@ -1,0 +1,174 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 5px;
+    padding: 5px;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    background-color: rgb(39, 143, 202);
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+  
+.input {
+    width: 55vw;
+    height: 55px;
+    padding: 5px 30px;
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+}
+
+.input input[type="text"]{
+    width: 53vw;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    font-family: "Nunito",sans-serif;
+    font-weight:bold;
+    border-radius: 30px;
+    font-size: 20px;
+}
+  
+.searchButton {
+    float: right;
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+.buttonColor{
+    color: rgb(39, 143, 202);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito",sans-serif;
+}
+
+.container h3{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+}
+
+.card{
+    width: 60vw;
+    background: transparent;
+    height: 100%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    font-family: "Nunito",sans-serif;
+}
+
+.card1 {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+}
+
+.card h1{
+    padding: 5px 0;
+    text-align: left;
+    font-size: 40px;
+    color: white;
+}
+
+.card h2{
+    text-align: left;
+    font-size: 45px;
+    color: white;
+}
+
+.card h5{
+    text-align: left;
+    font-size: 15px;
+    color: white;
+}
+  
+.card p{
+    text-align: left;
+    padding-top: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+@media (max-width: 700px){
+    .card{
+        flex-direction: column;
+    }
+    .card1{
+        text-align: center;
+        justify-content: center;
+    }
+    .card h1{
+        text-align: center;
+        padding:15px 0;
+        font-size: 30px;
+    }
+    .card h2{
+        text-align: center;
+        padding:15px 0;
+        font-size: 28px;
+    }
+    .card h5{
+        padding:0 0;
+        font-size: 0px;
+    }
+    .card p{
+        text-align: center;
+        padding:15px 0;
+        font-size: 20px;
+    }
+}
